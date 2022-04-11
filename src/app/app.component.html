@@ -1,0 +1,26 @@
+<div class="conteudoBase">
+  
+  <div class="top">
+    <div class="divbtnGrafico">
+      <input type="button" (click)="Adicionar()" value="Adicionar 5" class="btnGrafico" />
+      <input type="button" (click)="Remover()" value="Remover 5" class="btnGrafico" />
+    </div>
+  </div>
+
+  <div class="conteudo">
+    <div class="cardGraficoBola">
+      <div class="bola">
+        <div class="pontuacao" [ngStyle]="{'width':porcentagem +'%', 'height':porcentagem +'%'}">
+          <p id="porcetagemP" >{{porcentagem}}%</p>
+        </div>
+      </div>
+      <h2>Valor em Porcentagem <span id="porcentagemSpan">{{porcentagem}}%</span></h2>
+    </div>
+  </div>
+
+  <div class="rodape">
+
+  </div>
+</div>
+
+<!-- <link href="~/css/grafico.css" rel="stylesheet" /> -->
